@@ -1,5 +1,5 @@
 # OMDbSharp
-A C# API wrapper for omdbapi.com, a free web service to obtain movie information.
+A C# API wrapper for <a ref="http://omdbapi.com/" target="_blank">omdbapi.com</a>, a free web service to obtain movie information.
 
 Example:
 
