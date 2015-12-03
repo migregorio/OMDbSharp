@@ -10,9 +10,9 @@ namespace omdbSharp
     {
         const string omdbUrl = "http://www.omdbapi.com/?"; // Base omdb api URL
         public string omdbKey; // A key is required for poster images.
-        public movie newMovie; // Initialize movie object
-        public movielist newMovieList; // Initialize movie list object
-        public async Task<movie> getMovie(string query, string apiKey = "")
+        public Movie newMovie; // Initialize movie object
+        public MovieList newMovieList; // Initialize movie list object
+        public async Task<Movie> getMovie(string query, string apiKey = "")
         {
             using (var client = new HttpClient())
             {
@@ -23,7 +23,7 @@ namespace omdbSharp
                 HttpResponseMessage response = await client.GetAsync(omdbUrl + "t=" + query);
                 if (response.IsSuccessStatusCode)
                 {
-                    newMovie = await response.Content.ReadAsAsync<movie>();
+                    newMovie = await response.Content.ReadAsAsync<Movie>();
                     return newMovie;
                 }
                 else
@@ -32,7 +32,7 @@ namespace omdbSharp
                 }
             }
         }
-        public async Task<movielist> getMovieList(string query, string apiKey = "")
+        public async Task<MovieList> getMovieList(string query, string apiKey = "")
         {
             using (var client = new HttpClient())
             {
@@ -43,7 +43,7 @@ namespace omdbSharp
                 HttpResponseMessage response = await client.GetAsync(omdbUrl + "s=" + query);
                 if (response.IsSuccessStatusCode)
                 {
-                    newMovieList = await response.Content.ReadAsAsync<movielist>();
+                    newMovieList = await response.Content.ReadAsAsync<MovieList>();
                     return newMovieList;
                 }
                 else

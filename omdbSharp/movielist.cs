@@ -2,7 +2,7 @@
 
 namespace omdbSharp
 {
-    public class movielist
+    public class MovieList
     {
         public Search[] Search { get; set; }
     }
