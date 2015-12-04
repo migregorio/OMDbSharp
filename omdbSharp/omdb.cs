@@ -4,15 +4,15 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace omdbSharp
+namespace OmdbSharp
 {
-    public class omdb
+    public class Omdb
     {
         const string omdbUrl = "http://www.omdbapi.com/?"; // Base omdb api URL
         public string omdbKey; // A key is required for poster images.
         public Movie newMovie; // Initialize movie object
         public MovieList newMovieList; // Initialize movie list object
-        public async Task<Movie> getMovie(string query, string apiKey = "")
+        public async Task<Movie> GetMovie(string query, string apiKey = "")
         {
             using (var client = new HttpClient())
             {
@@ -32,7 +32,7 @@ namespace omdbSharp
                 }
             }
         }
-        public async Task<MovieList> getMovieList(string query, string apiKey = "")
+        public async Task<MovieList> GetMovieList(string query, string apiKey = "")
         {
             using (var client = new HttpClient())
             {

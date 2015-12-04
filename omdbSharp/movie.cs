@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace omdbSharp
+namespace OmdbSharp
 {
     public class Movie
     {

@@ -34,9 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="movie.cs" />
-    <Compile Include="movielist.cs" />
-    <Compile Include="omdb.cs" />
+    <Compile Include="Movie.cs" />
+    <Compile Include="MovieList.cs" />
+    <Compile Include="Omdb.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
