@@ -3,5 +3,6 @@ A C# API wrapper for <a href="http://omdbapi.com/" target="_blank">omdbapi.com</
 
 Example:
 
-<pre>omdb newOmdb = new omdb();<br/>
-movie newMovie = await newOmdb.getMovie("Blade Runner");</pre>
+<pre>var omdb = new Omdb();<br/>
+var movie = await omdb.GetMovie("Blade Runner");<br/>
+var posterStream = await movie.GetPosterStream();</pre>
