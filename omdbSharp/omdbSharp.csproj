@@ -38,6 +38,7 @@
     <Compile Include="MovieList.cs" />
     <Compile Include="Omdb.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rating.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
